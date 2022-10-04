@@ -20,12 +20,17 @@ class CustomTextfield extends StatelessWidget {
         color: Colors.white,
       ),
       decoration: InputDecoration(
-     //   enabledBorder: InputBorder(borderSide: 4),
+        fillColor: Colors.white,
+        enabledBorder: OutlineInputBorder(
+          borderSide: BorderSide(color: Colors.white),
+          borderRadius: BorderRadius.circular(30.0),
+        ),
         prefixIcon: Icon(
           icon,
           color: Colors.white.withOpacity(.3),
         ),
         hintText: hintText,
+        hintStyle: TextStyle(fontSize: 20.0, color: Colors.white54),
       ),
       cursorColor: Colors.white.withOpacity(.5),
     );

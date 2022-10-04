@@ -11,12 +11,11 @@ class SignIn extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: Colors.black,
-      body: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 150, horizontal: 20),
+      body: Center(
         child: SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Center(
                 child: const Text(
@@ -36,20 +35,23 @@ class SignIn extends StatelessWidget {
                 hintText: 'Enter Email',
                 icon: Icons.alternate_email,
               ),
+              const SizedBox(
+                height: 10,
+              ),
               const CustomTextfield(
                 obscureText: true,
                 hintText: 'Enter Password',
                 icon: Icons.lock,
               ),
               const SizedBox(
-                height: 10,
+                height: 30,
               ),
               GestureDetector(
                 child: Container(
                   width: size.width,
                   decoration: BoxDecoration(
                     color: Colors.blue,
-                    borderRadius: BorderRadius.circular(10),
+                    borderRadius: BorderRadius.circular(20),
                   ),
                   padding:
                       const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
