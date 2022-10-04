@@ -44,29 +44,6 @@ class SignIn extends StatelessWidget {
                 icon: Icons.lock,
               ),
               const SizedBox(
-                height: 30,
-              ),
-              GestureDetector(
-                child: Container(
-                  width: size.width,
-                  decoration: BoxDecoration(
-                    color: Colors.blue,
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                  padding:
-                      const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
-                  child: const Center(
-                    child: Text(
-                      'Sign In',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 18.0,
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-              const SizedBox(
                 height: 10,
               ),
               GestureDetector(
@@ -90,18 +67,62 @@ class SignIn extends StatelessWidget {
                 ),
               ),
               const SizedBox(
+                height: 30,
+              ),
+              GestureDetector(
+                child: Container(
+                  width: size.width,
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 10, vertical: 17),
+                  child: const Center(
+                    child: Text(
+                      'Sign In',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 18.0,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              Center(
+                child: Text.rich(
+                  TextSpan(children: [
+                    TextSpan(
+                      text: 'By signing in,you agree with our',
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                    TextSpan(
+                      text: ' Terms & conditions and Privacy Statement',
+                      style: TextStyle(
+                        color: Colors.blue,
+                      ),
+                    ),
+                  ]),
+                ),
+              ),
+              const SizedBox(
                 height: 20,
               ),
-              Row(
-                children: const [
-                  Expanded(child: Divider()),
-                  Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 10),
-                    child: Text('OR'),
-                  ),
-                  Expanded(child: Divider()),
-                ],
-              ),
+              // Row(
+              //   children: const [
+              //     Expanded(child: Divider()),
+              //     Padding(
+              //       padding: EdgeInsets.symmetric(horizontal: 10),
+              //       child: Text('OR'),
+              //     ),
+              //     Expanded(child: Divider()),
+              //   ],
+              // ),
               const SizedBox(
                 height: 20,
               ),
